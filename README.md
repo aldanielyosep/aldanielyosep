@@ -28,7 +28,7 @@
 ## ⚡️ Insights Dashboard
 
 <br>
-### ⏱ WakaTime (Last 7 Days)
+### ⏱ WakaTime
 
 <p align="center">
   <a href="https://wakatime.com/@aldanielyosep">
@@ -54,6 +54,8 @@
 🧾 Commits: 122
 🔀 Pull Requests: 13
 👀 Code Reviews: 0
+✅ Approved Reviews: 0
+💬 Commented Reviews: 0
 🔒 Restricted Private Contributions: 14784
 🗓 Last Updated: 2026-06-26
 ```

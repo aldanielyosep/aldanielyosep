@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   update-metrics:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -35,6 +34,28 @@ jobs:
                     totalPullRequestReviewContributions
                     restrictedContributionsCount
                   }
+                }
+              }
+            `;
+
+            const reviewSearchQuery = `
+              query (
+                $qAuthoredPrs: String!
+                $qReviewedPrs: String!
+                $qApproved: String!
+                $qCommented: String!
+              ) {
+                authored: search(query: $qAuthoredPrs, type: ISSUE) {
+                  issueCount
+                }
+                reviewed: search(query: $qReviewedPrs, type: ISSUE) {
+                  issueCount
+                }
+                approved: search(query: $qApproved, type: ISSUE) {
+                  issueCount
+                }
+                commented: search(query: $qCommented, type: ISSUE) {
+                  issueCount
                 }
               }
             `;
@@ -63,20 +84,42 @@ jobs:
               }
 
               const metrics = result.user.contributionsCollection;
-              totals.commits += metrics.totalCommitContributions;
-              totals.prs += metrics.totalPullRequestContributions;
-              totals.reviews += metrics.totalPullRequestReviewContributions;
               totals.restricted += metrics.restrictedContributionsCount;
             }
+
+            const reviewSearch = await github.graphql(reviewSearchQuery, {
+              qAuthoredPrs: `type:pr author:${login}`,
+              qReviewedPrs: `type:pr reviewed-by:${login}`,
+              qApproved: `type:pr reviewed-by:${login} review:approved`,
+              qCommented: `type:pr reviewed-by:${login} review:commented`
+            });
+
+            const commitSearch = await github.request('GET /search/commits', {
+              q: `author:${login}`,
+              per_page: 1,
+              headers: {
+                accept: 'application/vnd.github.cloak-preview+json'
+              }
+            });
+            totals.commits = commitSearch.data.total_count;
+            totals.prs = reviewSearch.authored.issueCount;
+            totals.reviews = reviewSearch.reviewed.issueCount;
+
+            const reviewStats = {
+              approved: reviewSearch.approved.issueCount,
+              commented: reviewSearch.commented.issueCount
+            };
 
             const updatedDate = new Date().toISOString().slice(0, 10);
 
             const block = [
               '```txt',
-              `🧾 Commits: ${totals.commits}`,
-              `🔀 Pull Requests: ${totals.prs}`,
-              `👀 Code Reviews: ${totals.reviews}`,
-              `🔒 Restricted Private Contributions: ${totals.restricted}`,
+              `🧾 Commits Authored (All Accessible Repos, All-time): ${totals.commits}`,
+              `🔀 Pull Requests Authored (All Accessible Repos, All-time): ${totals.prs}`,
+              `👀 Code Reviews (PRs Reviewed, All Accessible Repos, All-time): ${totals.reviews}`,
+              `✅ Approved Reviews (PRs, All Accessible Repos, All-time): ${reviewStats.approved}`,
+              `💬 Commented Reviews (PRs, All Accessible Repos, All-time): ${reviewStats.commented}`,
+              `🔒 Restricted Private Contributions (All-time): ${totals.restricted}`,
               `🗓 Last Updated: ${updatedDate}`,
               '```'
             ].join('\n');
