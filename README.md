@@ -31,7 +31,9 @@
 ### ⏱ WakaTime (Last 7 Days)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Source-WakaTime-0e75b6?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime source" />
+  <a href="https://wakatime.com/@aldanielyosep">
+    <img src="https://img.shields.io/badge/Source-WakaTime-0e75b6?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime source" />
+  </a>
   <img src="https://img.shields.io/badge/Update-Daily-1a7f37?style=for-the-badge" alt="Updated daily" />
 </p>
 
