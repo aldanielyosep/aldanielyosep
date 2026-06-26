@@ -37,7 +37,7 @@
   <img src="https://img.shields.io/badge/Update-Daily-1a7f37?style=for-the-badge" alt="Updated daily" />
 
   <a href="https://wakatime.com/@aldanielyosep">
-      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20Stats&api_domain=wakatime.com&disable_animations=false"
+      <img width="100%" src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20Stats&api_domain=wakatime.com&disable_animations=false"
           alt="aldanielyosep's wakatime last stats">
   </a>
 </p>
