@@ -25,10 +25,10 @@
 
 <hr>
 
-## ⚡️ Stats
+## ⚡️ Insights Dashboard
 
 <br>
-📊 **this week i spent my time on:**
+📊 **This week I spent my time on:**
 <!--START_SECTION:waka-->
 
 ```txt
@@ -55,21 +55,35 @@ Last Updated: 2026-06-26
 
 <!--END_SECTION:profile-metrics-->
 
-<div align=center>
-  <img width=390 src="https://github-readme-stats.vercel.app/api?username=aldanielyosep&theme=transparent&count_private=true&show_icons=true&rank_icon=github&locale=en" alt="aldanielyosep's GitHub Stats" />
-  <img width=390 src="https://github-readme-streak-stats.herokuapp.com/?user=aldanielyosep&theme=transparent&count_private=true&border_radius=10&locale=en" alt="aldanielyosep's" />
-  <img width=325 src="https://github-readme-stats.vercel.app/api/top-langs?username=aldanielyosep&theme=transparent&layout=donut&hide=css&langs_count=8&border_radius=10&show_icons=true&locale=en" alt="aldanielyosep's Most Used Languages" />
+<div align="center">
+  <table width="100%">
+    <tr>
+      <td width="50%" align="center">
+        <img src="https://github-readme-stats.vercel.app/api?username=aldanielyosep&theme=transparent&count_private=true&show_icons=true&rank_icon=github&hide_border=true&locale=en" alt="aldanielyosep GitHub stats" width="100%" />
+      </td>
+      <td width="50%" align="center">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=aldanielyosep&theme=transparent&count_private=true&hide_border=true&border_radius=10&locale=en" alt="aldanielyosep streak stats" width="100%" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=aldanielyosep&theme=transparent&layout=compact&hide=css&langs_count=8&hide_border=true&show_icons=true&locale=en" alt="aldanielyosep top languages" width="70%" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 <hr>
 
 ## 🐍 My Contributions
 
+<p align="center">Snake animation is generated from my GitHub contribution graph.</p>
+
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ChijiokeOkorji/ChijiokeOkorji/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ChijiokeOkorji/ChijiokeOkorji/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/ChijiokeOkorji/ChijiokeOkorji/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aldanielyosep/aldanielyosep/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aldanielyosep/aldanielyosep/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/aldanielyosep/aldanielyosep/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
 
