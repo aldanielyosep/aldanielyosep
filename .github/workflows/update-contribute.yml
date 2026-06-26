@@ -1,7 +1,7 @@
 name: Generate Stats
 on:
-  schedule: # execute every day at 12:00 PM
-    - cron: "0 12 * * *"
+  schedule: # execute every day at 12:20 PM
+    - cron: "20 12 * * *"
   workflow_dispatch:
 jobs:
   build:

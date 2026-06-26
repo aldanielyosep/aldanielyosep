@@ -61,6 +61,21 @@ Last Updated: 2026-06-26
 
 <!--END_SECTION:profile-metrics-->
 
+### 🎨 Visual Snapshot
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=aldanielyosep&theme=dark&hide_border=true" alt="Streak stats" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=aldanielyosep&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub stats card" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldanielyosep&layout=donut&theme=dark&hide_border=true" alt="Top languages donut" width="52%" />
+</p>
+
+<p align="center">
+  Visual cards are a quick snapshot. Source-of-truth totals are in Contribution Metrics above.
+</p>
+
 <p align="center">
   This dashboard keeps private-capable data only: WakaTime last 7 days and GitHub metrics generated via workflow token access.
 </p>
