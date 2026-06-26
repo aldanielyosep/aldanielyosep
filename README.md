@@ -35,16 +35,12 @@
     <img src="https://img.shields.io/badge/Source-WakaTime-0e75b6?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime source" />
   </a>
   <img src="https://img.shields.io/badge/Update-Daily-1a7f37?style=for-the-badge" alt="Updated daily" />
+
+  <a href="https://wakatime.com/@aldanielyosep">
+      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20Stats&api_domain=wakatime.com&disable_animations=false"
+          alt="aldanielyosep's wakatime last stats">
+  </a>
 </p>
-
-<!--START_SECTION:waka-->
-
-<a href="https://wakatime.com/@aldanielyosep">
-    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20Stats&api_domain=wakatime.com&disable_animations=false"
-        alt="aldanielyosep's wakatime last stats">
-</a>
-
-<!--END_SECTION:waka-->
 
 ### 📈 Contribution Metrics (Public + Private Where Accessible)
 
