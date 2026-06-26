@@ -38,24 +38,43 @@ jobs:
             `;
 
             const login = context.repo.owner;
-            const from = '2008-01-01T00:00:00Z';
-            const to = new Date().toISOString();
+            const now = new Date();
+            const startYear = 2008;
 
-            const result = await github.graphql(query, { login, from, to });
-            if (!result.user) {
-              core.setFailed(`Could not load user data for ${login}.`);
-              return;
+            const totals = {
+              commits: 0,
+              prs: 0,
+              reviews: 0,
+              restricted: 0
+            };
+
+            for (let year = startYear; year <= now.getUTCFullYear(); year++) {
+              const from = new Date(Date.UTC(year, 0, 1, 0, 0, 0)).toISOString();
+              const toDate = year === now.getUTCFullYear()
+                ? now
+                : new Date(Date.UTC(year, 11, 31, 23, 59, 59));
+              const to = toDate.toISOString();
+
+              const result = await github.graphql(query, { login, from, to });
+              if (!result.user) {
+                continue;
+              }
+
+              const metrics = result.user.contributionsCollection;
+              totals.commits += metrics.totalCommitContributions;
+              totals.prs += metrics.totalPullRequestContributions;
+              totals.reviews += metrics.totalPullRequestReviewContributions;
+              totals.restricted += metrics.restrictedContributionsCount;
             }
 
-            const metrics = result.user.contributionsCollection;
             const updatedDate = new Date().toISOString().slice(0, 10);
 
             const block = [
               '```txt',
-              `Commits: ${metrics.totalCommitContributions}`,
-              `Pull Requests: ${metrics.totalPullRequestContributions}`,
-              `Code Reviews: ${metrics.totalPullRequestReviewContributions}`,
-              `Restricted Private Contributions: ${metrics.restrictedContributionsCount}`,
+              `Commits: ${totals.commits}`,
+              `Pull Requests: ${totals.prs}`,
+              `Code Reviews: ${totals.reviews}`,
+              `Restricted Private Contributions: ${totals.restricted}`,
               `Last Updated: ${updatedDate}`,
               '```'
             ].join('\n');
