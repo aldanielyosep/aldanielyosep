@@ -74,11 +74,11 @@ jobs:
 
             const block = [
               '```txt',
-              `Commits: ${totals.commits}`,
-              `Pull Requests: ${totals.prs}`,
-              `Code Reviews: ${totals.reviews}`,
-              `Restricted Private Contributions: ${totals.restricted}`,
-              `Last Updated: ${updatedDate}`,
+              `🧾 Commits: ${totals.commits}`,
+              `🔀 Pull Requests: ${totals.prs}`,
+              `👀 Code Reviews: ${totals.reviews}`,
+              `🔒 Restricted Private Contributions: ${totals.restricted}`,
+              `🗓 Last Updated: ${updatedDate}`,
               '```'
             ].join('\n');
 

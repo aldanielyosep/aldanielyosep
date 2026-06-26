@@ -46,35 +46,25 @@ JSON              25 mins               ▓░░░░░░░░░░░░�
 ```
 
 <!--END_SECTION:waka-->
+<a href="https://wakatime.com/@aldanielyosep">
+    <img width="70%" src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20year%20Stats"
+        alt="aldanielyosep's wakatime last year stats">
+</a>
 
 ### 📈 Contribution Metrics (Public + Private Where Accessible)
 
 <!--START_SECTION:profile-metrics-->
 
 ```txt
-Commits: 122
-Pull Requests: 13
-Code Reviews: 0
-Restricted Private Contributions: 14784
-Last Updated: 2026-06-26
+🧾 Commits: 122
+🔀 Pull Requests: 13
+👀 Code Reviews: 0
+🔒 Restricted Private Contributions: 14784
+🗓 Last Updated: 2026-06-26
 ```
 
 <!--END_SECTION:profile-metrics-->
 
-### 🎨 Visual Snapshot
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=aldanielyosep&theme=dark&hide_border=true" alt="Streak stats" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=aldanielyosep&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub stats card" width="49%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aldanielyosep&layout=donut&theme=dark&hide_border=true" alt="Top languages donut" width="52%" />
-</p>
-
-<p align="center">
-  Visual cards are a quick snapshot. Source-of-truth totals are in Contribution Metrics above.
-</p>
 
 <p align="center">
   This dashboard keeps private-capable data only: WakaTime last 7 days and GitHub metrics generated via workflow token access.
@@ -101,5 +91,8 @@ Last Updated: 2026-06-26
   </a>
   <a href="https://linkedin.com/in/aldanielyosep" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" target="_blank" />
+  </a>
+  <a href="https://wakatime.com/@aldanielyosep">
+      <img src="https://img.shields.io/badge/-WakaTime-c14430?style=for-the-badge&logo=Wakatime&logoColor=white@aldanielyosep&color=green" alt="aldanielyosep's Wakatime">
   </a>
 </div>
