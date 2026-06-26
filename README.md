@@ -51,12 +51,12 @@
 <!--START_SECTION:profile-metrics-->
 
 ```txt
-🧾 Commits Authored (All Accessible Repos, All-time): 9954
-🔀 Pull Requests Authored (All Accessible Repos, All-time): 2284
-👀 Code Reviews (PRs Reviewed, All Accessible Repos, All-time): 2538
-✅ Approved Reviews (PRs, All Accessible Repos, All-time): 2375
-💬 Commented Reviews (PRs, All Accessible Repos, All-time): 0
-🔒 Restricted Private Contributions (All-time): 14784
+🧾 Commits Authored: 9954
+🔀 Pull Requests Authored: 2284
+👀 Code Reviews: 2538
+✅ Approved Reviews: 2375
+💬 Commented Reviews: 0
+🔒 Restricted Private Contributions: 14784
 🗓 Last Updated: 2026-06-26
 ```
 
