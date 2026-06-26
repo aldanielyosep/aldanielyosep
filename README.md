@@ -55,23 +55,9 @@ Last Updated: 2026-06-26
 
 <!--END_SECTION:profile-metrics-->
 
-<div align="center">
-  <table width="100%">
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=aldanielyosep&theme=transparent&count_private=true&show_icons=true&rank_icon=github&hide_border=true&locale=en" alt="aldanielyosep GitHub stats" width="100%" />
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=aldanielyosep&theme=transparent&count_private=true&hide_border=true&border_radius=10&locale=en" alt="aldanielyosep streak stats" width="100%" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=aldanielyosep&theme=transparent&layout=compact&hide=css&langs_count=8&hide_border=true&show_icons=true&locale=en" alt="aldanielyosep top languages" width="70%" />
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  This dashboard keeps private-capable data only: WakaTime last 7 days and GitHub metrics generated via workflow token access.
+</p>
 
 <hr>
 
