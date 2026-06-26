@@ -2,10 +2,9 @@ name: Update Profile Metrics
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Waka Readme"]
-    types:
-      - completed
+  schedule:
+    # Runs every day at 12:00 PM
+    - cron: "0 12 * * *"
 
 permissions:
   contents: write

@@ -37,19 +37,12 @@
 
 <!--START_SECTION:waka-->
 
-```txt
-Ruby              7 hrs 46 mins         ██████████████▓░░░░░░░░░░   58.32 %
-C#                2 hrs 50 mins         █████▒░░░░░░░░░░░░░░░░░░░   21.35 %
-YAML              46 mins               █▒░░░░░░░░░░░░░░░░░░░░░░░   05.77 %
-Markdown          33 mins               █░░░░░░░░░░░░░░░░░░░░░░░░   04.19 %
-JSON              25 mins               ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.14 %
-```
-
-<!--END_SECTION:waka-->
 <a href="https://wakatime.com/@aldanielyosep">
-    <img width="70%" src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20year%20Stats"
+    <img width="100%" src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20year%20Stats&api_domain=wakatime.com&disable_animations=false"
         alt="aldanielyosep's wakatime last year stats">
 </a>
+
+<!--END_SECTION:waka-->
 
 ### 📈 Contribution Metrics (Public + Private Where Accessible)
 
@@ -91,8 +84,5 @@ JSON              25 mins               ▓░░░░░░░░░░░░�
   </a>
   <a href="https://linkedin.com/in/aldanielyosep" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" target="_blank" />
-  </a>
-  <a href="https://wakatime.com/@aldanielyosep">
-      <img src="https://img.shields.io/badge/-WakaTime-c14430?style=for-the-badge&logo=Wakatime&logoColor=white@aldanielyosep&color=green" alt="aldanielyosep's Wakatime">
   </a>
 </div>
