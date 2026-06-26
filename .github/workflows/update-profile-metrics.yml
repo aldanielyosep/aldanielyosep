@@ -1,0 +1,90 @@
+name: Update Profile Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 12 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Build contribution metrics and update README
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+          script: |
+            const fs = require('fs');
+
+            const query = `
+              query ($login: String!, $from: DateTime!, $to: DateTime!) {
+                user(login: $login) {
+                  contributionsCollection(from: $from, to: $to) {
+                    totalCommitContributions
+                    totalPullRequestContributions
+                    totalPullRequestReviewContributions
+                    restrictedContributionsCount
+                  }
+                }
+              }
+            `;
+
+            const login = context.repo.owner;
+            const from = '2008-01-01T00:00:00Z';
+            const to = new Date().toISOString();
+
+            const result = await github.graphql(query, { login, from, to });
+            if (!result.user) {
+              core.setFailed(`Could not load user data for ${login}.`);
+              return;
+            }
+
+            const metrics = result.user.contributionsCollection;
+            const updatedDate = new Date().toISOString().slice(0, 10);
+
+            const block = [
+              '```txt',
+              `Commits: ${metrics.totalCommitContributions}`,
+              `Pull Requests: ${metrics.totalPullRequestContributions}`,
+              `Code Reviews: ${metrics.totalPullRequestReviewContributions}`,
+              `Restricted Private Contributions: ${metrics.restrictedContributionsCount}`,
+              `Last Updated: ${updatedDate}`,
+              '```'
+            ].join('\n');
+
+            const startMarker = '<!--START_SECTION:profile-metrics-->';
+            const endMarker = '<!--END_SECTION:profile-metrics-->';
+            const readmePath = 'README.md';
+            const readme = fs.readFileSync(readmePath, 'utf8');
+
+            const markerPattern = new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`, 'm');
+            if (!markerPattern.test(readme)) {
+              core.setFailed('README markers for profile metrics were not found.');
+              return;
+            }
+
+            const replacement = `${startMarker}\n\n${block}\n\n${endMarker}`;
+            const updatedReadme = readme.replace(markerPattern, replacement);
+
+            fs.writeFileSync(readmePath, updatedReadme, 'utf8');
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git add README.md
+            git commit -m "chore: update profile metrics"
+            git push
+          else
+            echo "No README changes to commit"
+          fi
