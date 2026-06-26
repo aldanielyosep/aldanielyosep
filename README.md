@@ -40,7 +40,7 @@
 <!--START_SECTION:waka-->
 
 <a href="https://wakatime.com/@aldanielyosep">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20year%20Stats&api_domain=wakatime.com&disable_animations=false"
+    <img src="https://github-readme-stats.vercel.app/api/wakatime?username=aldanielyosep&hide_progress=false&layout=compact&custom_title=Wakatime%20last%20Stats&api_domain=wakatime.com&disable_animations=false"
         alt="aldanielyosep's wakatime last stats">
 </a>
 
@@ -61,11 +61,6 @@
 ```
 
 <!--END_SECTION:profile-metrics-->
-
-
-<p align="center">
-  This dashboard keeps private-capable data only: WakaTime last 7 days and GitHub metrics generated via workflow token access.
-</p>
 
 <hr>
 
