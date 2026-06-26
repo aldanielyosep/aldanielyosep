@@ -28,7 +28,13 @@
 ## ⚡️ Insights Dashboard
 
 <br>
-📊 **This week I spent my time on:**
+### ⏱ WakaTime (Last 7 Days)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Source-WakaTime-0e75b6?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime source" />
+  <img src="https://img.shields.io/badge/Update-Daily-1a7f37?style=for-the-badge" alt="Updated daily" />
+</p>
+
 <!--START_SECTION:waka-->
 
 ```txt
@@ -41,7 +47,7 @@ JSON              25 mins               ▓░░░░░░░░░░░░�
 
 <!--END_SECTION:waka-->
 
-### Contribution Metrics
+### 📈 Contribution Metrics (Public + Private Where Accessible)
 
 <!--START_SECTION:profile-metrics-->
 

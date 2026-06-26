@@ -2,14 +2,17 @@ name: Update Profile Metrics
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 12 * * *"
+  workflow_run:
+    workflows: ["Waka Readme"]
+    types:
+      - completed
 
 permissions:
   contents: write
 
 jobs:
   update-metrics:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
