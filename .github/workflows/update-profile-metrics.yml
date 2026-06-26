@@ -114,12 +114,12 @@ jobs:
 
             const block = [
               '```txt',
-              `🧾 Commits Authored (All Accessible Repos, All-time): ${totals.commits}`,
-              `🔀 Pull Requests Authored (All Accessible Repos, All-time): ${totals.prs}`,
-              `👀 Code Reviews (PRs Reviewed, All Accessible Repos, All-time): ${totals.reviews}`,
-              `✅ Approved Reviews (PRs, All Accessible Repos, All-time): ${reviewStats.approved}`,
-              `💬 Commented Reviews (PRs, All Accessible Repos, All-time): ${reviewStats.commented}`,
-              `🔒 Restricted Private Contributions (All-time): ${totals.restricted}`,
+              `🧾 Commits Authored: ${totals.commits}`,
+              `🔀 Pull Requests Authored: ${totals.prs}`,
+              `👀 Code Reviews: ${totals.reviews}`,
+              `✅ Approved Reviews: ${reviewStats.approved}`,
+              `💬 Commented Reviews: ${reviewStats.commented}`,
+              `🔒 Restricted Private Contributions: ${totals.restricted}`,
               `🗓 Last Updated: ${updatedDate}`,
               '```'
             ].join('\n');
