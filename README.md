@@ -1,27 +1,54 @@
-## Hi there 👋
-
-<img src="https://github.com/aldanielyosep/aldanielyosep/blob/main/software_engineer.png" alt="Banner of a developer sitting in front of a desk">
+<img src="software_engineer.png" alt="Banner">
 
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Inter&size=48&center=true&vCenter=true&width=500&height=70&color=4493F8&duration=4000&lines=Hi+There!+👋;+I'm+Daniel+Yosep!;" />
+Hi 👋 I'm Daniel Yosep
 </h1>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=aldanielyosep&label=Profile%20views&color=0e75b6&style=flat" alt="profile visitor count" />
-</p>
+**Hands-on Engineering Manager • Backend Engineer • Software Architect**
 
-## 🛠️ Languages and Tools
+I enjoy building scalable backend systems, improving engineering practices, and still love writing production code.
 
-<br>
+Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern engineering workflows.
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=rails,ruby,dotnet,nodejs,vue,astro,java,laravel,nuxtjs" />
-  <img src="https://skillicons.dev/icons?i=kubernetes,docker,heroku,jenkins" />
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis" />
-  <img src="https://skillicons.dev/icons?i=git,github,gitlab,githubactions,bitbucket" />
-  <img src="https://skillicons.dev/icons?i=tailwind,kafka,postman,grafana,prometheus,vscode" />
-</p>
+---
 
+## 💡 What I Do
+
+🏗 Design scalable backend architectures
+💎 Build production-ready Ruby on Rails applications
+🚀 Lead engineering teams while staying hands-on
+⚡ Improve developer experience & CI/CD
+📈 Optimize Query performance
+🔍 Review code and mentor engineers
+
+---
+
+## ❤️ Primary Stack
+# Backend
+<img src="https://skillicons.dev/icons?i=rails,ruby,dotnet" />
+
+# Platform
+<img src="https://skillicons.dev/icons?i=kubernetes,docker,heroku,jenkins,githubactions,grafana,prometheus" />
+
+# Database
+<img src="https://skillicons.dev/icons?i=postgres,mysql,redis" />
+
+# Frontend
+<img src="https://skillicons.dev/icons?i=vue,nuxtjs" />
+
+## Also experienced with
+<img src="https://skillicons.dev/icons?i=java,laravel" />
+
+---
+
+## 🌱 Currently Exploring
+
+- AI-assisted Software Development
+- Agentic AI
+- Event-Driven Architecture
+- Developer Experience
+
+---
 
 <hr>
 
@@ -73,6 +100,7 @@
 </div>
 
 <hr>
+## 📫 Connect
 <div align="center">
   <a href="mailto:aldanielyosep@gmail.com">
     <img src="https://skillicons.dev/icons?i=gmail" />
