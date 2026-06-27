@@ -55,11 +55,7 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
 
 ---
 
-<hr>
-
 ## ⚡️ Insights Dashboard
-
-<br>
 
 ### ⏱ WakaTime
 
@@ -90,8 +86,7 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
 ```
 
 <!--END_SECTION:profile-metrics-->
-
-<hr>
+---
 
 ## 🐍 My Contributions
 
@@ -105,7 +100,7 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
   </picture>
 </div>
 
-<hr>
+---
 
 ## 📫 Connect
 <div align="center">
