@@ -15,25 +15,30 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
 ## 💡 What I Do
 
 🏗 Design scalable backend architectures
+
 💎 Build production-ready Ruby on Rails applications
+
 🚀 Lead engineering teams while staying hands-on
+
 ⚡ Improve developer experience & CI/CD
+
 📈 Optimize Query performance
+
 🔍 Review code and mentor engineers
 
 ---
 
 ## ❤️ Primary Stack
-# Backend
+### Backend
 <img src="https://skillicons.dev/icons?i=rails,ruby,dotnet" />
 
-# Platform
+### Platform
 <img src="https://skillicons.dev/icons?i=kubernetes,docker,heroku,jenkins,githubactions,grafana,prometheus" />
 
-# Database
+### Database
 <img src="https://skillicons.dev/icons?i=postgres,mysql,redis" />
 
-# Frontend
+### Frontend
 <img src="https://skillicons.dev/icons?i=vue,nuxtjs" />
 
 ## Also experienced with
@@ -55,6 +60,7 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
 ## ⚡️ Insights Dashboard
 
 <br>
+
 ### ⏱ WakaTime
 
 <p align="center">

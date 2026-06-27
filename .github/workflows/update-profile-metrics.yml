@@ -118,7 +118,6 @@ jobs:
               `🔀 Pull Requests Authored: ${totals.prs}`,
               `👀 Code Reviews: ${totals.reviews}`,
               `✅ Approved Reviews: ${reviewStats.approved}`,
-              `💬 Commented Reviews: ${reviewStats.commented}`,
               `🔒 Restricted Private Contributions: ${totals.restricted}`,
               `🗓 Last Updated: ${updatedDate}`,
               '```'
