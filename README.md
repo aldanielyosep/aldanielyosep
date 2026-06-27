@@ -106,6 +106,7 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
 </div>
 
 <hr>
+
 ## 📫 Connect
 <div align="center">
   <a href="mailto:aldanielyosep@gmail.com">
