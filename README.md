@@ -76,12 +76,12 @@ Currently working across Ruby on Rails, PostgreSQL, Docker, Kafka and modern eng
 <!--START_SECTION:profile-metrics-->
 
 ```txt
-🧾 Commits Authored: 11622
-🔀 Pull Requests Authored: 2745
-👀 Code Reviews: 3130
-✅ Approved Reviews: 3040
-🔒 Restricted Private Contributions: 17226
-🗓 Last Updated: 2026-11-15
+🧾 Commits Authored: 658
+🔀 Pull Requests Authored: 118
+👀 Code Reviews: 0
+✅ Approved Reviews: 0
+🔒 Restricted Private Contributions: 16639
+🗓 Last Updated: 2026-11-16
 ```
 
 <!--END_SECTION:profile-metrics-->
